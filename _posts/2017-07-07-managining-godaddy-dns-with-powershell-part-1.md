@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Managing GoDaddy DNS with PowerShell : Part 1'
+title: ! 'Managing GoDaddy DNS with PowerShell: Part 1'
 categories:
 - blog
 ---
