@@ -15,7 +15,7 @@ To make an API call with PowerShell I used `Invoke-WebRequest` with the followin
 - Method: Specifies the method used for the web request. (Get, Post, Put, etc)
 - Headers: Specifies the headers of the web request. Enter a hash table or dictionary.
 
-To authenticate against the API I had to insert the key/secret into the headers using a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx):
+To authenticate against the API I inserted the key/secret into the headers using a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx):
 
 ~~~ powershell
 $apiKey = '2s7Yn1f2dW_W5KJhWbGwuLhyW4Xdvgb2c'
