@@ -47,4 +47,4 @@ Param
 
 ### Footnotes
 
-[^1]: The documentation states *Retrieve DNS Records for the specified Domain, optionally with the specified Type and/or Name*, however I've never been able to figure out how to return all records with a specific name regardless of type.
+[^1]: The documentation states "Retrieve DNS Records for the specified Domain, optionally with the specified Type **and/or** Name", however I've never been able to figure out how to return all records with a specific name regardless of type.
