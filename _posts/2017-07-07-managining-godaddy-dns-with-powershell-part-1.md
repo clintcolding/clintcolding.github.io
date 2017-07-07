@@ -1,8 +1,12 @@
 ---
 layout: post
-title: 'Managing GoDaddy DNS with PowerShell: Part 1'
+title: 'GoDaddy API and PowerShell: Part 1'
 categories:
 - PowerShell
+tags:
+- PowerShell
+- GoDaddy
+- API
 ---
 ## Making the Call
 
