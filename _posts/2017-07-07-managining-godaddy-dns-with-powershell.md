@@ -1,26 +1,24 @@
 ---
 layout: post
-title: Managing GoDaddy DNS with PowerShell
+title: Managing GoDaddy DNS with PowerShell: Part 1
 categories:
 - blog
 ---
 
-# Managing GoDaddy DNS with PowerShell
-
-Like most admins, I work with our public DNS records quite a bit. The most painful part of the process was working through the GoDaddy web portal just to update the same records on a handful of domains. I created a PowerShell module that calls the GoDaddy API to make these simple changes much less frustrating.
+I work with our public DNS records quite a bit. The most painful part of the process is navigating through the GoDaddy web portal just to update the same records on a handful of domains. I created a PowerShell [module](https://github.com/clintcolding/GoDaddy) that calls the GoDaddy API to make these simple changes much less frustrating.
 
 I started off doing some research, GoDaddy has wonderful [documentation](https://developer.godaddy.com/). You'll need a key/secret pair to make calls to the API, which you can generate [here](https://developer.godaddy.com/keys/). (Use a production key.)
 
 To make an API call with PowerShell I used `Invoke-WebRequest` with the following parameters:
 
-- URI: Specifies the Uniform Resource Identifier (URI) of the Internet resource to which the web request is sent. Enter a URI. This parameter supports HTTP, HTTPS, FTP, and FILE values.
+- URI: Specifies the Uniform Resource Identifier (URI) of the Internet resource to which the web request is sent.
 - Method: Specifies the method used for the web request. (Get, Post, Put, etc)
 - Headers: Specifies the headers of the web request. Enter a hash table or dictionary.
 
 To authenticate the API I had to insert the key/secret into the headers using a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx):
 
 ~~~ powershell
-$apiKey = 'dKDJceh2SSXk_oMj9SSzzmsZ1AZjmEuQHi'
+$apiKey = '2s7Yn1f2dW_W5KJhWbGwuLhyW4Xdvgb2c'
 $apiSecret = 'oMmm2m5TwZxrYyXwXZnoN'
 
 $Headers = @{}
@@ -35,7 +33,7 @@ Invoke-WebRequest https://api.godaddy.com/v1/domains/clintcolding.com/records/ -
 
 The API successfully returned the data but in JSON, which wasn't exactly easy to read:
 
-~~~ powershell
+~~~ txt
 StatusCode        : 200
 StatusDescription : OK
 Content           : [{"type":"A","name":"@","data":"192.30.252.153","ttl":600},{"type":"A","name":"@","data":"19
@@ -58,13 +56,13 @@ ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 696
 ~~~
 
-I reran the command only this time I piped the output to `ConvertFrom-Json`:
+I reran the command, this time, piping the output to `ConvertFrom-Json`:
 
 ~~~ powershell
 Invoke-WebRequest https://api.godaddy.com/v1/domains/clintcolding.com/records/ -Method Get -Headers $Headers | ConvertFrom-Json
 ~~~
 
-~~~ powershell
+~~~ txt
 type  name           data                                 ttl
 ----  ----           ----                                 ---
 A     @              192.30.252.153                       600
@@ -78,3 +76,7 @@ MX    @              smtp.secureserver.net               3600
 NS    @              ns53.domaincontrol.com              3600
 NS    @              ns54.domaincontrol.com              3600
 ~~~
+
+Which makes it much easier to read. This was my first time calling API's using PowerShell. If you would have done it differently or have any tips, I'd love some constructive criticism.
+
+This is just a glimpse of what you can do with GoDaddy API's. You can view all available API's in the [documentation](https://developer.godaddy.com/doc).
