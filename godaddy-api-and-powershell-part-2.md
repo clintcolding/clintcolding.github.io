@@ -9,11 +9,11 @@ tags:
 - API
 - Function
 ---
-# Creating a Function
+# Building a Function
 
 Once I was successful in making calls to the API, I wanted to build a function that made future calls much easier and cleaner. I wanted more granular options as well, such as only returning A records or records with a specific name. The full [documentation](https://developer.godaddy.com/doc#!/_v1_domains/recordGet) details the format and acceptable values.[^1]
 
-I always start my functions with a snippet. If you're using PowerShell ISE, `CTRL+J` then select `Cmdlet - (advanced function)`. ![Cmdlet Snippet](../assets/cmdletsnipet.png)
+I always start my functions with a snippet. If you're using PowerShell ISE, `CTRL+J` then select `Cmdlet - (advanced function)`. ![Cmdlet Snippet](../assets/cmdletsnippet.png)
 
 ## Parameters
 
