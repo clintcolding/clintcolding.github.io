@@ -13,9 +13,9 @@ I started off doing some research, GoDaddy has wonderful [documentation](https:/
 
 To make an API call with PowerShell I used `Invoke-WebRequest` with the following parameters:
 
--URI: Specifies the Uniform Resource Identifier (URI) of the Internet resource to which the web request is sent. Enter a URI. This parameter supports HTTP, HTTPS, FTP, and FILE values.
--Method: Specifies the method used for the web request. (Get, Post, Put, etc)
--Headers: Specifies the headers of the web request. Enter a hash table or dictionary.
+- URI: Specifies the Uniform Resource Identifier (URI) of the Internet resource to which the web request is sent. Enter a URI. This parameter supports HTTP, HTTPS, FTP, and FILE values.
+- Method: Specifies the method used for the web request. (Get, Post, Put, etc)
+- Headers: Specifies the headers of the web request. Enter a hash table or dictionary.
 
 To authenticate the API I had to insert the key/secret into the headers using a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx):
 
@@ -33,7 +33,7 @@ Once I was confident that I'd be able to authenticate, I tried using the `Get` m
 Invoke-WebRequest https://api.godaddy.com/v1/domains/clintcolding.com/records/ -Method Get -Headers $Headers
 ~~~
 
-The API successfully returned the data but in JSON, which was difficult to read in a POSH terminal:
+The API successfully returned the data but in JSON, which wasn't exactly easy to read:
 
 ~~~ powershell
 StatusCode        : 200
