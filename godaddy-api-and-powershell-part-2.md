@@ -17,7 +17,7 @@ I always start my functions with a snippet. If you're using PowerShell ISE, `CTR
 
 ## Parameters
 
-Based on the API docs, I knew I would need three parameters: domain, type, and name. I also knew that the value of type was restricted to either A, AAAA, CNAME, MX, NS, SOA, SRV, or TXT. I used the parameter attribute [ValidateSet](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_functions_advanced_parameters#validateset-attribute){target='_blank'} to limit the possible input to only those options. ValidateSet is also used by intellisense for tab completion. ddd
+Based on the API docs, I knew I would need three parameters: domain, type, and name. I also knew that the value of type was restricted to either A, AAAA, CNAME, MX, NS, SOA, SRV, or TXT. I used the parameter attribute [ValidateSet](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_functions_advanced_parameters#validateset-attribute){target="_blank"} to limit the possible input to only those options. ValidateSet is also used by intellisense for tab completion. ddd
 
 In order to use the Name parameter, I had to also use the Type parameter. I used the [ParameterSetName](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_functions_advanced_parameters#parametersetname-argument target="_blank") argument to accomplish this.
 
