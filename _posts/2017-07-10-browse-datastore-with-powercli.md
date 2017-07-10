@@ -8,7 +8,7 @@ tags:
 - PowerCLI
 - VMware
 ---
-This is a quick and easy trick for managing files on a VMware datastore with PowerCLI. It comes in handy quite a bit, I've even wrapped it in simple a [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
+This is a quick and easy trick for managing files on a VMware datastore. It comes in handy quite a bit, I've even wrapped it in simple a [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
 
 ~~~ powershell
 $DS = Get-Datastore MyDatastore
