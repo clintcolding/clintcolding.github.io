@@ -14,6 +14,8 @@ This is a quick and easy trick for managing files on a VMware datastore with Pow
 $DS = Get-Datastore MyDatastore
 
 New-PSDrive -Location $DS -Name ds -PSProvider VimDatastore -root "\"
+
+Set-Location ds:\
 ~~~
 
-After that you can `cd ds:\` and `dir`, `Copy-DatastoreItem`, `Remove-Item`, etc. Basically any command you can run against a file system, you can run against a datastore.
+After that you can `dir`, `Copy-DatastoreItem`, `Remove-Item`, etc. Basically any command you can run against a file system, you can run against a datastore.
