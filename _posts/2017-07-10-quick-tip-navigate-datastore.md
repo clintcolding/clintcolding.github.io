@@ -2,13 +2,13 @@
 layout: post
 title: 'Quick Tip: Navigate a Datastore'
 categories:
-- PowerShell
+- Quick Tip
 tags:
 - PowerShell
 - PowerCLI
 - VMware
 ---
-This is a quick and easy trick for managing files on a VMware datastore. It comes in handy quite a bit, I've even wrapped it in simple a [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
+This is a quick tip for managing files on a VMware datastore. We're simply mapping a datastore to a PSDrive that we can then `cd` to.
 
 ~~~ powershell
 $DS = Get-Datastore MyDatastore
@@ -19,3 +19,5 @@ Set-Location ds:\
 ~~~
 
 After that you can `dir`, `Copy-DatastoreItem`, `Remove-Item`, etc. Basically any command you can run against a file system, you can run against a datastore.
+
+It comes in handy quite a bit, I've even wrapped it in time saving [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
