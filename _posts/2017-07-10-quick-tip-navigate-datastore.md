@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Manage a Datastore with PowerCLI'
+title: 'Quick Tip: Navigate a Datastore'
 categories:
 - PowerShell
 tags:
