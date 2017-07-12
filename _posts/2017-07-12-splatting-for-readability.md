@@ -13,7 +13,7 @@ Splatting was introduced way back in PowerShell v2 and gave us a new way of pass
 New-ADUser -Name $Displayname -DisplayName $Displayname -GivenName $FirstName -Surname $LastName -SamAccountName $Username -UserPrincipalName "$Username@mycompany.com" -AccountPassword $SecurePassword -Description $Title -Title $Title -Department $Department -Manager $Manager -Company "My Company" -HomeDrive "H:" -HomeDirectory "\\server\$Username" -Enabled $true
 ~~~
 
-I passed 15 parameters to `New-ADUser`, and because it's a production script that others need to quickly decipher, I've named each parameter without truncating.
+I passed 15 parameters to `New-ADUser`, and because it's a production script, I named each parameter without truncating.
 
 To increase readability via splatting, we first organize our parameter and value pairs into a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx?f=255&MSPPError=-2147217396) assigned to a variable:
 
