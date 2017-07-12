@@ -44,3 +44,8 @@ New-ADUser @userparams
 ~~~
 
 By splatting our parameters we can now easily view them all neatly at once. If we ever need to make changes we don't have to scroll for days and hope we stay on the right line. Future readers of our code will thank us too.
+
+> To splat a switch, pass the value as $true.
+> ~~~ powershell
+> "UseDefaultCredential" = $true;
+> ~~~
