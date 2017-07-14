@@ -13,7 +13,13 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
@@ -91,23 +97,23 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
 
-  &:visited {
+  /**&:visited {
     color: darken($brand-color, 15%);
-  }
+  }**/
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: #ff3b3f;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
     text-decoration: none;
 
     .username {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
@@ -139,7 +145,6 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
 }
 
 code {
@@ -200,7 +205,7 @@ pre {
   vertical-align: middle;
 
   path {
-    fill: $grey-color;
+    fill: #ff3b3f;
   }
 }
 

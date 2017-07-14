@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  //border-top: 5px solid #66fcf1;
+  border-bottom: 1px solid #ff3b3f;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -11,20 +11,19 @@
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
+  color: #a9a9a9;
+  @include relative-font-size(2);
+  font-weight: 500;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
 
 .site-nav {
+  font-weight: lighter;
+  letter-spacing: -1px;
+  text-transform: lowercase;
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
@@ -105,14 +104,20 @@
 /**
  * Site footer
  */
+
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid #ff3b3f;
   padding: $spacing-unit 0;
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list {
+  font-weight: bold;
+  @include relative-font-size(1.3);
 }
 
 .contact-list,
@@ -135,8 +140,8 @@
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -145,8 +150,8 @@
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(55% - (#{$spacing-unit} / 2));
+  width:         calc(55% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -176,6 +181,7 @@
  * Page content
  */
 .page-content {
+  flex: 1 0 auto;
   padding: $spacing-unit 0;
 }
 
@@ -188,18 +194,23 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 10px;
   }
 }
 
-.post-meta {
+.post-meta, .home-post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: #ff3b3f;
+}
+
+.home-post-meta {
+  float: right;
 }
 
 .post-link {
-  display: block;
-  @include relative-font-size(1.5);
+  //display: block;
+  color: #000;
+  font-size: 18px;
 }
 
 
@@ -245,6 +256,15 @@
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
+    }
+  }
+
+  a {
+    color: #ff3b3f;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
