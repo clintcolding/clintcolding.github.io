@@ -8,6 +8,9 @@ github_username:  clintcolding
 
 google_analytics: UA-102213338-1
 
+disqus:
+  shortname: clintcolding.disqus.com
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
