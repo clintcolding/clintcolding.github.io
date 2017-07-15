@@ -23,11 +23,12 @@ minima:
 #header_pages:
 # - about.html
 
+gems:
+  - jekyll-feed
+
 # Build settings
 markdown: kramdown
 theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
-plugins:
-  - jekyll-feed
