@@ -1,3 +1,3 @@
-My personal blog built on [Minima](https://github.com/jekyll/minima).
+# [clintcolding.com](clintcolding.com)
 
-[clintcolding.com](clintcolding.com)
+My personal blog built on [Minima](https://github.com/jekyll/minima).
