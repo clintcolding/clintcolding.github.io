@@ -1,5 +1,6 @@
 title: Clint Colding
 author: Clint Colding
+url: http://clintcolding.com
 description: > # this means to ignore newlines until "baseurl:"
   Just a guy trying to learn new stuff.
 
@@ -28,3 +29,5 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+plugins:
+  - jekyll-feed
