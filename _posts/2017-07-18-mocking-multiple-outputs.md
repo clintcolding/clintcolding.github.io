@@ -8,7 +8,7 @@ tags:
 - Mocking
 ---
 
-Lately I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service. Below is the specific workflow I was trying to simulate:
+Lately, I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service. Below is the specific scenario I was trying to simulate:
 
 - Tests the service with Get-Service.
   - Service is stopped.
@@ -17,7 +17,7 @@ Lately I've been diving into Pester and today I ran into a function that called 
         - Service is running.
           - Script exits.
 
-The part I was hung up on was the fact that Get-Service was being run twice. The first time I needed it to return Stopped, but the second time Running. After a bit of research I found an [example](https://groups.google.com/forum/#!topic/pester/HH0ANH1OiKY) using a [script scoped variable](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_scopes) as an execution counter. This is what it looks like:
+I was having a hard time with the fact that Get-Service was being run twice. The first time I needed it to return Stopped, but the second time Running. After a bit of research, I found an [example](https://groups.google.com/forum/#!topic/pester/HH0ANH1OiKY) using a [script scoped variable](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_scopes) as an execution counter. This is what it looks like:
 
 ~~~ posh
 Context 'When service is stopped and successfully started' {
@@ -49,6 +49,6 @@ Context 'When service is stopped and successfully started' {
 
 The first time Get-Service is mocked the counter is set to zero, returning `@{Status='Stopped'}`. `$Script:MockCounter++` is executed, setting the counter to one, mocking Get-Service with `@{Status='Running'}` the second time.
 
-This is only the second Pester test I've written. If theres something I could have done better I'd love to know. You can contact me [@theclintcolding](https://twitter.com/theclintcolding) or leave a comment below!
+This is only the second Pester test I've written. If there's something I could have done better I'd love to know. You can contact me [@theclintcolding](https://twitter.com/theclintcolding) or leave a comment below!
 
 You can find the complete function and tests on [Github](https://github.com/clintcolding/TheToolbox).
