@@ -5,6 +5,7 @@ categories:
 - PowerShell
 tags:
 - Pester
+- Mocking
 ---
 
 Lately I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service. Below is the specific workflow I was trying to simulate:
