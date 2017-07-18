@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Mocking: Same Command, Different Output'
+title: 'Mocking Multiple Outputs'
 categories:
 - PowerShell
 tags:
