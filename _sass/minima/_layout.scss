@@ -200,11 +200,15 @@
 
 .post-meta, .home-post-meta {
   font-size: $small-font-size;
+}
+
+.post-meta {
   color: #ff3b3f;
 }
 
 .home-post-meta {
   float: right;
+  color: #a9a9a9;
 }
 
 .post-link {
