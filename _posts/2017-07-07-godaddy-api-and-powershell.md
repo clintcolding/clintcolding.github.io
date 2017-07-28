@@ -7,6 +7,7 @@ tags:
 - PowerShell
 - GoDaddy
 - API
+excerpt: Navigating through the GoDaddy web portal just to update a few DNS records can be painful, use PowerShell instead.
 ---
 
 I work with our public DNS records quite a bit. The most painful part of the process is navigating through the GoDaddy web portal just to update the same records on a handful of domains. I created a PowerShell [module](https://github.com/clintcolding/GoDaddy) that calls the GoDaddy API to make these simple changes much less frustrating.

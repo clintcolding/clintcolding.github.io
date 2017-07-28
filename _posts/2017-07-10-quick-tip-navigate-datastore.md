@@ -7,6 +7,7 @@ tags:
 - PowerShell
 - PowerCLI
 - VMware
+excerpt: This is a quick tip for managing files on a VMware datastore.
 ---
 This is a quick tip for managing files on a VMware datastore. We're simply mapping a datastore to a PSDrive that we can then `cd` to.
 
