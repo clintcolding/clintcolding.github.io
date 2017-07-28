@@ -1,31 +1,7 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <img src="/images/clint.png">
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="contact-list">
-          <li>
-            about me
-            </li>
-        </ul>
-
-        <ul class="social-media-list">
-          {% if site.github_username %}<li>{% include social_links/github.html %}</li>{% endif %}
-          {% if site.linkedin_username %}<li>{% include social_links/linkedin.html %}</li>{% endif %}
-          {% if site.twitter_username %}<li>{% include social_links/twitter.html %}</li>{% endif %}
-      </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
+<center>
+  {% include social_links/github.html %}
+  {% include social_links/linkedin.html %}
+  {% include social_links/twitter.html %}
 
 </footer>
