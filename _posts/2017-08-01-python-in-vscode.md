@@ -12,7 +12,7 @@ excerpt: A quick overview of setting up and running Python in Visual Studio Code
 
 ### Installation
 
-1. Install [VS Code](https://code.visualstudio.com/Download) and [Python](https://www.python.org/downloads/).
+1. Install [VS Code](https://code.visualstudio.com/Download){:target="_blank"} and [Python](https://www.python.org/downloads/){:target="_blank"}.
 
 2. Set environment variable via PowerShell:
 
@@ -26,7 +26,7 @@ excerpt: A quick overview of setting up and running Python in Visual Studio Code
     python -m pip install pylint
     ~~~
 
-4. Install the VS Code Python [extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python).
+4. Install the VS Code Python [extension](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python){:target="_blank"}.
 
 ### Running Code
 
