@@ -22,7 +22,7 @@ To make an API call with PowerShell I used `Invoke-WebRequest` with the followin
 
 To authenticate against the API I inserted the key/secret into the headers using a [hashtable](https://technet.microsoft.com/en-us/library/ee692803.aspx):
 
-~~~ posh
+~~~ powershell
 $apiKey = '2s7Yn1f2dW_W5KJhWbGwuLhyW4Xdvgb2c'
 $apiSecret = 'oMmm2m5TwZxrYyXwXZnoN'
 
@@ -32,7 +32,7 @@ $Headers["Authorization"] = 'sso-key ' + $apiKey + ':' + $apiSecret
 
 Once I was confident that I'd be able to authenticate, I tried using the `Get` method to retrieve all records for my domain:
 
-~~~ posh
+~~~ powershell
 Invoke-WebRequest https://api.godaddy.com/v1/domains/clintcolding.com/records/ -Method Get -Headers $Headers
 ~~~
 
@@ -63,7 +63,7 @@ RawContentLength  : 696
 
 I reran the command, this time, piping the output to `ConvertFrom-Json`:
 
-~~~ posh
+~~~ powershell
 Invoke-WebRequest https://api.godaddy.com/v1/domains/clintcolding.com/records/ -Method Get -Headers $Headers | ConvertFrom-Json
 ~~~
 

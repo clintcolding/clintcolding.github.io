@@ -20,7 +20,7 @@ Lately, I've been diving into Pester and today I ran into a function that called
 
 I was having a hard time with the fact that Get-Service was being run twice. The first time I needed it to return Stopped, but the second time Running. After a bit of research, I found an [example](https://groups.google.com/forum/#!topic/pester/HH0ANH1OiKY) using a [script scoped variable](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_scopes) as an execution counter. This is what it looks like:
 
-~~~ posh
+~~~ powershell
 Context 'When service is stopped and successfully started' {
 
 ### Initial count ###
