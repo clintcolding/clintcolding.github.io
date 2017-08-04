@@ -20,21 +20,21 @@ To increase readability via splatting, we first organize our parameter and value
 
 ~~~ powershell
     $userparams = @{
-        "Name"              = "$Displayname";
-        "DisplayName"       = "$Displayname";
-        "GivenName"         = "$FirstName";
-        "Surname"           = "$LastName";
-        "SamAccountName"    = "$Username";
-        "UserPrincipalName" = "$Username@mycompany.com";
-        "AccountPassword"   = "$SecurePassword";
-        "Description"       = "$Title";
-        "Title"             = "$Title";
-        "Department"        = "$Department";
-        "Manager"           = "$Manager";
-        "Company"           = "My Company";
-        "HomeDrive"         = "H:";
-        "HomeDirectory"     = "\\server\$Username";
-        "Enabled"           = "$true"
+        Name              = $Displayname;
+        DisplayName       = $Displayname;
+        GivenName         = $FirstName;
+        Surname           = $LastName;
+        SamAccountName    = $Username;
+        UserPrincipalName = "$Username@mycompany.com";
+        AccountPassword   = $SecurePassword;
+        Description       = $Title;
+        Title             = $Title;
+        Department        = $Department;
+        Manager           = $Manager;
+        Company           = "My Company";
+        HomeDrive         = "H:";
+        HomeDirectory     = "\\server\$Username";
+        Enabled           = $true
     }
 ~~~
 
