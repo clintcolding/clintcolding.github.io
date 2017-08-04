@@ -35,13 +35,13 @@ When working with .py files your terminal should automatically update to Python.
 {: .center}
 ![Python Terminal](/images/pythonterminal.png)
 
-To run your code you can open the Command Palette (`Ctrl+Shift+P`) and search for *Python: Run Python File in Terminal*.
+To run your code you can open the Command Palette `Ctrl+Shift+P` and search for *Python: Run Python File in Terminal*.
 
 {: .center}
 ![Command Palette](/images/pythoncmdpalette.png)
 
 You can also create a keybind:
 - File > Preferences > Keyboard Shortcuts
-- Search for `python.execInTerminal`
+- Search for *python.execInTerminal*
 
 > Before running your code using this method, you must save your file each time.
