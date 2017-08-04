@@ -3,7 +3,7 @@
  */
 .site-header {
   //border-top: 5px solid #66fcf1;
-  border-bottom: 1px solid #ff3b3f;
+  border-bottom: 1px solid $accent-color;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -11,7 +11,7 @@
 }
 
 .site-title {
-  color: #a9a9a9;
+  //color: $grey-color-light;
   @include relative-font-size(2);
   font-weight: 500;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -106,7 +106,7 @@
  */
 
 .site-footer {
-  border-top: 1px solid #ff3b3f;
+  border-top: 1px solid $accent-color;
   padding: $spacing-unit 0;
 }
 
@@ -203,22 +203,23 @@
 }
 
 .post-meta {
-  color: #ff3b3f;
+  color: $accent-color;
 }
 
 .home-post-meta {
   float: right;
-  color: #a9a9a9;
+  color: $accent-color;
 }
 
 .excerpt {
-  font-size: $small-font-size;
+  color: $grey-color;
+  //font-size: $small-font-size;
 }
 
 .post-link {
   //display: block;
-  color: #000;
-  font-size: 18px;
+  color: $text-color;
+  font-size: $base-font-size * 1.250;
 }
 
 
@@ -268,7 +269,7 @@
   }
 
   a {
-    color: #ff3b3f;
+    color: $accent-color;
     text-decoration: none;
 
     &:hover {
