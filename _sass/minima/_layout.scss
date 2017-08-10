@@ -119,6 +119,8 @@
   border-top: 1px solid $accent-color;
   padding: $spacing-unit 0;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 
     a {
     color: $accent-color;
@@ -128,11 +130,6 @@
         text-decoration: underline;
       }
     }
-}
-
-.footer-text {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 // Page content
