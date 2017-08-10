@@ -3,7 +3,6 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
     {% if page_paths %}
       <nav class="site-nav">
@@ -19,6 +18,8 @@
         </label>
 
         <div class="trigger">
+          <a class="page-link" href="{{ "/" | relative_url }}">blog</a>
+          
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.title %}
@@ -30,5 +31,12 @@
         </div>
       </nav>
     {% endif %}
+
+    <div class="header-social">
+      {% include social_links/github.html %}
+      {% include social_links/linkedin.html %}
+      {% include social_links/twitter.html %}  
+    </div>
+
   </div>
 </header>
