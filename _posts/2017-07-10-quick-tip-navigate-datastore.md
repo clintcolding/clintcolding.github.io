@@ -21,4 +21,4 @@ Set-Location ds:\
 
 After that, you can `dir`, `Copy-DatastoreItem`, `Remove-Item`, etc. Basically any command you can run against a file system, you can run against a datastore.
 
-It comes in handy quite a bit, I've even wrapped it in time-saving [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
+It comes in handy quite a bit, I've even wrapped it in a [function](https://github.com/clintcolding/TheToolbox/blob/master/Map-Datastore.ps1).
