@@ -7,7 +7,7 @@ tags:
 - CentOS
 - Apache
 - VMware
-excerpt: A quick guide to installing CentOS 7 Core and configuring Apache.
+excerpt: A quick guide to configuring Apache on CentOS 7 Core.
 ---
 
 Since I've been working a lot with [Jekyll](https://jekyllrb.com/) and static sites, I figured it was time I actually hosted one on my own. I recently built a wiki site for my company's IT documentation and decided I needed to host it somewhere. We're mainly a Microsoft shop, so to try something new, I deployed it with Apache on CentOS 7 Core.
