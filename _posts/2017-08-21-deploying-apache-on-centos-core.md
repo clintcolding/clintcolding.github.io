@@ -54,29 +54,43 @@ To confirm your settings run `ip a`.
 
 First make sure your CentOS install is up to date with:
 
-`sudo yum -y update`
+``` console
+sudo yum -y update
+```
 
 And then install Apache with:
 
-`sudo yum -y install httpd`
+``` console
+sudo yum -y install httpd
+```
 
 # Configure Apache
 
 First, we need to allow port 80 through the firewall:
 
-`sudo firewall-cmd --permanent --add-port=80/tcp`
+``` console
+sudo firewall-cmd --permanent --add-port=80/tcp
+```
 
-`sudo firewall-cmd --reload`
+``` console
+sudo firewall-cmd --reload
+```
 
 Next, we'll configure Apache to start on boot:
 
-`sudo systemctl start httpd`
+``` console
+sudo systemctl start httpd
+```
 
-`sudo systemctl enable httpd`
+``` console
+sudo systemctl enable httpd
+```
 
 And confirm the status with:
 
-`sudo systemctl status httpd`
+``` console
+sudo systemctl status httpd
+```
 
 You should now be able to browse to your server IP and view the default Apache website, confirming your configuration.
 
