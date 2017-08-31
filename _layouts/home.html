@@ -3,8 +3,13 @@ layout: default
 ---
 
 <div class="home">
-
+  
   <h1 class="site-title">{{ site.title }}</h1>
+  <div class="home-social">
+      {% include social_links/github.html %}
+      {% include social_links/linkedin.html %}
+      {% include social_links/twitter.html %}  
+  </div>
   <h4 class="site-description">{{ site.description }}</h4>
 
   <!-- Content from index.md -->
