@@ -1,16 +1,28 @@
 // Site header
 
+.home-icon {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  position: absolute;
+  font-size: 1.7rem;
+}
+
+.home-social {
+  text-align: center;
+  line-height: $base-line-height * $base-font-size * 2.25;
+}
+
 .site-header {
   //border-top: 5px solid #66fcf1;
   border-bottom: 1px solid $accent-color;
   min-height: $spacing-unit * 1.865;
 
-  // Sticky header
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  background: $background-color;
+  // // Sticky header
+  // position: fixed;
+  // right: 0;
+  // left: 0;
+  // z-index: 999;
+  // background: $background-color;
 }
 
 .site-title {
@@ -19,6 +31,7 @@
   line-height: 1;
   text-align: center;
   padding-bottom: 0;
+  margin-bottom: -.4rem;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -127,8 +140,8 @@
 // Footer
 
 .site-footer {
-  border-top: 1px solid $accent-color;
-  padding: $spacing-unit 0;
+  // border-top: 1px solid $accent-color;
+  padding-bottom: 1rem;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -169,10 +182,12 @@
 
 .post-meta {
   color: $accent-color;
+  text-align: center;
 }
 
 .home-post-meta {
   display: block;
+  float: right;
   color: $accent-color;
 }
 
@@ -187,11 +202,21 @@
 
 // Posts
 
+.post-image {
+  margin-bottom: 1rem; 
+  text-align: center;
+  
+  img {
+    height: 50px;
+  }
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
 
 .post-title {
+  text-align: center;
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
@@ -202,7 +227,7 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  padding-top: 1rem;
 
   h2 {
     @include relative-font-size(2);
