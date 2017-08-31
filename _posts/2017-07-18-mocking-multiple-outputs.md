@@ -7,6 +7,7 @@ tags:
 - Pester
 - Mocking
 excerpt: Lately, I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service.
+image: /images/thumbnails/posh.png
 ---
 
 Lately, I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service. Below is the specific scenario I was trying to simulate:

@@ -6,6 +6,7 @@ categories:
 tags:
 - VSCode
 excerpt: A quick overview of setting up and running Python in Visual Studio Code on Windows 10.
+image: /images/thumbnails/python.png
 ---
 
 > A quick overview of setting up and running Python in Visual Studio Code on Windows 10...

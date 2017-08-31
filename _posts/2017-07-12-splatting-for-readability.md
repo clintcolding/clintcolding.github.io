@@ -6,6 +6,7 @@ categories:
 tags:
 - Splatting
 excerpt: Splatting was introduced way back in PowerShell v2 and gave us a new way of passing parameters to our commands.
+image: /images/thumbnails/posh.png
 ---
 
 Splatting was introduced way back in PowerShell v2 and gave us a new way of passing parameters to our commands. I've found splatting to be the most helpful in scripts, where maximum readability is crucial. For example, before I learned about splatting, I had a command like this:
