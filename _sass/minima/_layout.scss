@@ -46,6 +46,11 @@
   font-style: italic;
   width: 70%;
   padding-left: 15%;
+
+  @include media-query($on-laptop) {
+    width: 90%;
+    padding-left: 5%;
+  }
 }
 
 .header-social {
