@@ -5,6 +5,11 @@
   padding-top: 2rem;
   position: absolute;
   font-size: 1.7rem;
+
+  @include media-query($on-laptop) {
+    padding-left: .8rem;
+    padding-top: .8rem;
+  }
 }
 
 .home-social {
@@ -14,15 +19,15 @@
 
 .site-header {
   //border-top: 5px solid #66fcf1;
-  border-bottom: 1px solid $accent-color;
+  // border-bottom: 1px solid $accent-color;
   min-height: $spacing-unit * 1.865;
 
   // // Sticky header
-  // position: fixed;
-  // right: 0;
-  // left: 0;
-  // z-index: 999;
-  // background: $background-color;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 998;
+  background: $background-color;
 }
 
 .site-title {
@@ -87,59 +92,60 @@
     }
   }
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    left: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-    float: left;
+  // @include media-query($on-palm) {
+  //   position: absolute;
+  //   z-index: 1000;
+  //   top: 9px;
+  //   left: $spacing-unit / 2;
+  //   background-color: $background-color;
+  //   border: 1px solid $grey-color-light;
+  //   border-radius: 5px;
+  //   text-align: right;
+  //   float: left;
 
-    label[for="nav-trigger"] {
-      display: block;
-      float: left;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
+  //   label[for="nav-trigger"] {
+  //     display: block;
+  //     float: left;
+  //     width: 36px;
+  //     height: 36px;
+  //     z-index: 2;
+  //     cursor: pointer;
+  //   }
 
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+  //   .menu-icon {
+  //     display: block;
+  //     float: right;
+  //     width: 36px;
+  //     height: 26px;
+  //     line-height: 0;
+  //     padding-top: 10px;
+  //     text-align: center;
 
-      > svg path {
-        fill: $accent-color;
-      }
-    }
+  //     > svg path {
+  //       fill: $accent-color;
+  //     }
+  //   }
 
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
+  //   input ~ .trigger {
+  //     clear: both;
+  //     display: none;
+  //   }
 
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
+  //   input:checked ~ .trigger {
+  //     display: block;
+  //     padding-bottom: 5px;
+  //   }
 
-    .page-link {
-      display: block;
-      padding: 5px 10px;
+  //   .page-link {
+  //     display: block;
+  //     padding: 5px 10px;
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
+  //     &:not(:last-child) {
+  //       margin-right: 0;
+  //     }
+  //     margin-left: 20px;
+  //   }
+  // }
 }
 
 // Footer
@@ -211,6 +217,8 @@
 .post-image {
   margin-bottom: 1rem; 
   text-align: center;
+  position: relative;
+  z-index: 999;
   
   img {
     height: 50px;

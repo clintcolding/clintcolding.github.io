@@ -1,3 +1,23 @@
-
-
-    <a class="home-icon" href="{{ "/" | relative_url }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+<header class="site-header" role="banner">
+    
+      <div class="wrapper">
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+      
+          <nav class="site-nav">
+            <div class="trigger">
+              <a class="page-link" href="{{ "/" | relative_url }}">home</a>
+            </div>
+          </nav>
+    
+        <div class="header-social">
+          {% include social_links/github.html %}
+          {% include social_links/linkedin.html %}
+          {% include social_links/twitter.html %}  
+        </div>
+    
+      </div>
+    </header>
+    
+    
+    
