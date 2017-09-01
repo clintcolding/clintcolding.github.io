@@ -111,15 +111,18 @@ pre,
 code {
   @include relative-font-size(0.9375);
   font-family: 'Inconsolata', monospace;
-  border: 1px solid $grey-color-light;
+  // border: 1px solid $grey-color-light;
   border-radius: 3px;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 2px 5px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
 }
 
 pre {
+  
   padding: 8px 12px;
   overflow-x: auto;
 
