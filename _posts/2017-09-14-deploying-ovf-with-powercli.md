@@ -44,5 +44,5 @@ $ds = Get-Datastore datastore1
 
 And finally, using `Import-VApp`, deploy the OVF template:
 ``` powershell
-Import-VApp -Source $ovfpath -OvfConfiguration $ovfconfig -Name A1-LB-01 -VMHost $vmhost -Datastore $ds -DiskStorageFormat Thin
+Import-VApp -Source $ovfpath -OvfConfiguration $ovfconfig -Name KEMPLB -VMHost $vmhost -Datastore $ds -DiskStorageFormat Thin
 ```
