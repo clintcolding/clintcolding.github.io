@@ -13,7 +13,7 @@ image: /images/thumbnails/linux.png
 
 Since I've been working a lot with [Jekyll](https://jekyllrb.com/) and static sites, I figured it was time I actually hosted one on my own. I recently built a wiki site for my company's IT documentation and decided I needed to host it somewhere. We're mainly a Microsoft shop, so to try something new, I deployed it with Apache on CentOS 7 Core.
 
-# Installing CentOS
+### Installing CentOS
 
 This should be straightforward, you can download CentOS 7 Minimal [here](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1611.iso).
 
@@ -23,7 +23,7 @@ I installed CentOS on VMware. To install VMware Tools you'll need to run:
 yum install open-vm-tools
 ```
 
-# Configure Network
+### Configure Network
 
 Next, you'll need to configure your network. To view all devices run `nmcli d`, which should return something like this:
 
@@ -51,7 +51,7 @@ Finally, back on the main NetworkManager screen, select *Activate a connection*.
 
 To confirm your settings run `ip a`.
 
-# Install Apache
+### Install Apache
 
 First make sure your CentOS install is up to date with:
 
@@ -65,7 +65,7 @@ And then install Apache with:
 sudo yum -y install httpd
 ```
 
-# Configure Apache
+### Configure Apache
 
 First, we need to allow port 80 through the firewall:
 
@@ -95,7 +95,7 @@ sudo systemctl status httpd
 
 You should now be able to browse to your server IP and view the default Apache website, confirming your configuration.
 
-# Upload Website Files
+### Upload Website Files
 
 Finally, we're ready to upload our website files. I used [WinSCP](https://winscp.net/eng/download.php) to copy my files to `/var/www/html`.
 

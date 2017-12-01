@@ -1,34 +1,20 @@
-title: Clint Colding
-author: Clint Colding
-url: http://clintcolding.com
-description: Systems Engineer working in the Tampa area. I write about what I'm learning and working on, which is usually PowerShell and Automation.
-
+# Site settings
+title: "Clint Colding"
+description: ""
+baseurl: "" # begin with /repo-name if use as project, else leave empty for gh-pages
+url: "" # default is empty
+author: "Clint Colding"
 
 twitter_username: theclintcolding
 github_username: clintcolding
 linkedin_username: clintcolding
 
-google_analytics: UA-102213338-1
-
-disqus:
-  shortname: clintcolding
-
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
-
-gems:
-  - jekyll-feed
-
 # Build settings
-markdown: kramdown
-theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+# just leave empty to disable it
+google_analytics:
+disqus_shortname:
