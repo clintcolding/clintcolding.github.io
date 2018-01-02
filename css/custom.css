@@ -37,6 +37,7 @@ body {
 .footer a {
     color: #222;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .footer a:hover {
