@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 999;
+    border-bottom: 1px solid rgba(226, 226, 226, 0.87);
+}
+
+.home-title {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 7rem;;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(226, 226, 226, 0.87);
+}
+
+.footer a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgba(90, 88, 88, 0.685);
+}
+
+.title-section {
+    margin: 12rem 0;
+}
+
+.blog-title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.post-title {
+    margin-top: 7rem;
+}
+
+.post-meta {
+    color: #FF3B3F;
+}
+
+@media (max-width: 550px) {
+    .title-section {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+    
+    .blog-title {
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.blog {
+    margin-bottom: 2rem;
+}
+
+h3 a {
+    color: #222;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: rgba(90, 88, 88, 0.685);
+}
+
+.navbar {
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar a {
+    color: #222;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgba(90, 88, 88, 0.685);
+}
+
+.navbar .li-left:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.navbar .li-left {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.navbar .li-right:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.navbar .li-right {
+    position: relative;
+    float: right;
+    list-style: none;
+}
+
+blockquote {
+    border-left: 4px solid #FF3B3F;
+    padding-left: 1rem;
+    letter-spacing: -1px;
+    font-style: italic;
+  }
+
+img {
+    width: 100%;
+}
+
+.not-found {
+    margin-top: 7rem;
+    text-align: center;
+}

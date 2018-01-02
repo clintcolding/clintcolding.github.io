@@ -4,7 +4,7 @@ title: 'Working with Environment Variables'
 categories:
 - PowerShell
 tags:
-excerpt:
+excerpt: 'Simple how to for working with env variables.'
 ---
 #### Getting Variables
 
