@@ -19,16 +19,13 @@ permalink: /projects/
         </div>
     </div>
     <div class="five columns">
-        <a href="https://github.com/clintcolding/GoDaddy" target="_blank"><img src="/images/godaddy.png"></a>
+        <a href="https://github.com/clintcolding/GoDaddy" target="_blank"><img class="project-img" src="/images/godaddy.png"></a>
     </div>
 </div>
 
 <!-- Second Project -->
 
 <div class="row project">
-    <div class="six columns">
-        <a href="http://sbplayerstats.herokuapp.com/stats/705111" target="_blank"><img src="/images/sbps.png"></a>
-    </div>
     <div class="six columns">
         <div class="row">
             <h4><a href="http://sbplayerstats.herokuapp.com/" target="_blank">SmallBall Player Stats</a></h4>
@@ -42,12 +39,15 @@ permalink: /projects/
             <a class="github-button" href="https://github.com/clintcolding/sbplayerstats" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star clintcolding/sbplayerstats on GitHub">Star</a>
         </div>
     </div>
+    <div class="six columns">
+        <a href="http://sbplayerstats.herokuapp.com/stats/705111" target="_blank"><img src="/images/sbps.png"></a>
+    </div>
 </div>
 
 <!-- Third Project -->
 
 <div class="row project">
-    <div class="seven columns">
+    <div class="six columns">
         <div class="row">
             <h4><a href="https://github.com/clintcolding/clintcolding.github.io" target="_blank">ClintColding.com</a></h4>
         </div>
@@ -59,7 +59,7 @@ permalink: /projects/
             <a class="github-button" href="https://github.com/clintcolding/clintcolding.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star clintcolding/clintcolding.github.io on GitHub">Star</a>
         </div>
     </div>
-    <div class="five columns">
+    <div class="six columns">
         <a href="https://github.com/clintcolding/clintcolding.github.io" target="_blank"><img src="/images/blog.png"></a>
     </div>
 </div>

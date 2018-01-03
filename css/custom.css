@@ -154,5 +154,16 @@ img {
 }
 
 .project {
-    margin-top: 12rem;
+    margin-top: 7rem;
+}
+
+.project-img {
+    float: right;
+}
+
+@media (max-width: 550px) {
+    .project-img {
+        margin-top: 2rem;
+        float: left;
+    }
 }
