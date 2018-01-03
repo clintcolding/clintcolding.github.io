@@ -29,6 +29,7 @@ body {
 }
 
 .footer {
+    margin-top: 7rem;
     padding: 1.5rem;
     text-align: center;
     border-top: 1px solid rgba(226, 226, 226, 0.87);
@@ -88,6 +89,15 @@ h3 a:hover {
     color: rgba(90, 88, 88, 0.685);
 }
 
+h4 a {
+    color: #222;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    color: rgba(90, 88, 88, 0.685);
+}
+
 .navbar {
     height: 2rem;
     text-transform: uppercase;
@@ -133,10 +143,16 @@ blockquote {
   }
 
 img {
-    width: 100%;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .not-found {
     margin-top: 7rem;
     text-align: center;
+}
+
+.project {
+    margin-top: 12rem;
 }
