@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Content coming soon!
+<div class="project">Content coming soon!</div>
