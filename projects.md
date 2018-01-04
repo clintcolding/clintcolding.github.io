@@ -40,7 +40,7 @@ permalink: /projects/
         </div>
     </div>
     <div class="six columns">
-        <a href="http://sbplayerstats.herokuapp.com/stats/705111" target="_blank"><img src="/images/sbps.png"></a>
+        <a href="http://sbplayerstats.herokuapp.com/stats/705111" target="_blank"><img class="project-img" src="/images/sbps.png"></a>
     </div>
 </div>
 
@@ -60,6 +60,6 @@ permalink: /projects/
         </div>
     </div>
     <div class="six columns">
-        <a href="https://github.com/clintcolding/clintcolding.github.io" target="_blank"><img src="/images/blog.png"></a>
+        <a href="https://github.com/clintcolding/clintcolding.github.io" target="_blank"><img class="project-img" src="/images/blog.png"></a>
     </div>
 </div>
