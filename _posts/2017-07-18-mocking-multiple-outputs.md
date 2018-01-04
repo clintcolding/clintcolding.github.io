@@ -12,12 +12,21 @@ image: /images/thumbnails/posh.png
 
 Lately, I've been diving into Pester and today I ran into a function that called the same command twice, each time outputting something different (or it should). The function tests and if needed attempts to correct the status of a service. Below is the specific scenario I was trying to simulate:
 
-- Tests the service with Get-Service.
-  - Service is stopped.
-    - Attempts to start service.
-      - Tests the service with Get-Service.
-        - Service is running.
-          - Script exits.
+<center>
+  <p>
+    <div class="row">Tests the service with Get-Service.</div>
+    <div class="row"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+    <div class="row">Service is stopped.</div>
+    <div class="row"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+    <div class="row">Attempts to start service.</div>
+    <div class="row"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+    <div class="row">Tests the service with Get-Service.</div>
+    <div class="row"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+    <div class="row">Service is running.</div>
+    <div class="row"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+    <div class="row">Script exits.</div>
+  </p>
+</center>
 
 I was having a hard time with the fact that Get-Service was being run twice. The first time I needed it to return Stopped, but the second time Running. After a bit of research, I found an [example](https://groups.google.com/forum/#!topic/pester/HH0ANH1OiKY) using a [script scoped variable](https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_scopes) as an execution counter. This is what it looks like:
 
