@@ -295,6 +295,7 @@ ol {
   list-style-position: inside;
   list-style-type: decimal; }
 ol, ul {
+  font-family: 'Open Sans', Georgia, Times, serif;
   padding-left: 0;
   margin-top: 0; }
 ul ul,
