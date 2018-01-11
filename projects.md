@@ -28,7 +28,7 @@ permalink: /projects/
 <div class="row project">
     <div class="six columns">
         <div class="row">
-            <h4><a href="http://sbplayerstats.herokuapp.com/" target="_blank">SmallBall Player Stats</a></h4>
+            <h4><a href="http://sbplayerstats.herokuapp.com/" target="_blank">SmallStats</a></h4>
         </div>
         <div class="row">
             <p>A web app that computes advanced statistics for the popular baseball simulation game, <a href="http://smallball.com" target="_blank">SmallBall</a>.</p>
@@ -40,7 +40,7 @@ permalink: /projects/
         </div>
     </div>
     <div class="six columns">
-        <a href="http://sbplayerstats.herokuapp.com/stats/705111" target="_blank"><img class="project-img" src="/images/sbps.png"></a>
+        <a href="http://sbplayerstats.herokuapp.com" target="_blank"><img class="project-img" src="/images/smallstats.png"></a>
     </div>
 </div>
 
