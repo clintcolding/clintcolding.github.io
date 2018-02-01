@@ -12,6 +12,9 @@ google_analytics: UA-102213338-1
 minima:
   date_format: "%b %-d, %Y"
 
+plugins:
+- jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 exclude:
