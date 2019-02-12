@@ -21,7 +21,7 @@ tags:
 
 `poolmon /b`
 
-![PoolMon](/images/poolmon.png)
+![PoolMon](/static/img/_posts/poolmon.PNG)
 
 > Usually the best way to determine if a driver is leaking memory is if its allocating memory faster than its freeing.
 
