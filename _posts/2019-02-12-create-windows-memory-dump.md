@@ -7,6 +7,8 @@ tags:
 - Windows
 ---
 
+This is a simple process to generate a full memory dump for a Windows server running on VMware. There are no actions required within the VM itself, the only requirement is that you're able to suspend the VM.
+
 1. Download the [Vmss2core](https://labs.vmware.com/flings/vmss2core) tool from VMware Flings.
 2. Suspend the VM you want to collect the memory dump for, this will generate a `.vmss` file.
 3. Navigate to the datastore your VM resides on and download the `.vmss` and `.vmem` files.
@@ -17,4 +19,4 @@ tags:
 .\vmss2core-sb-8456865.exe -W8 TESTVM-4409dd21.vmss TESTVM-4409dd21.vmem
 ```
 
-6. Once complete you will have a `memory.dmp` file that you can further analyze.
+You will now have a `memory.dmp` file that you can further analyze.
