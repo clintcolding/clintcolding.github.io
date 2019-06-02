@@ -1,152 +1,93 @@
-# What's `jekyll-minimal-theme`?
+# The Minimal theme
 
-It's another minimal(istic) Jekyll static site generator theme,
-that is, a ready-to-fork template pack.
+[![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-See a live demo @ [`henrythemes.github.io/jekyll-minimal-theme` »](http://henrythemes.github.io/jekyll-minimal-theme)
+*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
 
-For example:
-
-```
-├── _config.yml                               # site configuration
-├── _posts                                    # sample blog posts
-|   ├── 2014-05-05-sportdb-update-v192.md     #   filename format:
-|   ├── 2014-10-10-new-repo-baviria-bayern.md #    => YEAR-MONTH-DAY-TITLE.MARKUP
-|   ├── 2014-10-21-sql-views.md
-|   ├── 2014-11-11-new-reop-maps.md
-|   └── 2014-12-15-quick-starter-datafiles.md
-├── _layouts                           
-|   ├── default.html                   # master layout template
-|   └── post.html                      # single blog post template
-├── css                               
-|   ├── _settings.scss                 # style settings (e.g. variables)
-|   └── style.scss                     # master style page
-├── feed.xml                           # web feed template (e.g. in atom format)
-├── archive.html                       # archive template
-└── index.html                         # index template
-```
-
-will result in (with `permalink: /:title.html`):
-
-```
-└── _site                                # output build folder; site gets generated here
-    ├── css
-    |   └── style.css                    # styles for pages (copied 1:1 as is)
-    ├── sportdb-update-v192.html         # blog post page
-    ├── new-repo-baviria-bayern.html     # another blog post page
-    ├── sql-views.html                   #  ""
-    ├── new-repo-maps.html               #  ""
-    ├── quick-starter-datafiles.html     #  ""
-    ├── feed.xml                         # web feed (e.g. in atom format)
-    ├── archive.html                     # archive page
-    └── index.html                       # index page
-```
-
+![Thumbnail of minimal](thumbnail.png)
 
 ## Usage
 
-To use - delete all sample posts in the `_posts` folder and
-change the settings in `_config.yml` to use your own `site.title`
-and `site.url`:
+To use the Minimal theme:
 
+1. Add the following to your site's `_config.yml`:
+
+    ```yml
+    theme: jekyll-theme-minimal
+    ```
+
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
+
+
+
+## Customizing
+
+### Configuration variables
+
+Minimal will respect the following variables, if set in your site's `_config.yml`:
+
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
 ```
-title:   'Jekyll Minimal Theme'
-url:     'http://henrythemes.github.io/jekyll-minimal-theme'
-author:
-  name:  'Jekyll Minimal Theme Team'
+
+Additionally, you may choose to set the following optional variables:
+
+```yml
+logo: [Location of the logo]
+show_downloads: ["true" or "false" to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
 ```
 
+### Stylesheet
 
-## Color n Typography Settings (in `css/_settings.scss`)
+If you'd like to add your own custom styles:
 
-Typography (Fonts):
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
-~~~
-$font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-$code-font-family:  Menlo, Monaco, "Courier New", monospace;
-~~~
+### Layouts
 
-Colors:
+If you'd like to change the theme's HTML layout:
 
-~~~
-$masthead-color:         #505050;
-$masthead-small-color:   #C0C0C0;
+1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+2. Create a file called `/_layouts/default.html` in your site
+3. Paste the default layout content copied in the first step
+4. Customize the layout as you'd like
 
-$post-title-color:       #303030;
-$post-date-color:        #9a9a9a;
+## Roadmap
 
+See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
 
-$body-color:            #515151;
-$body-background-color: #fff;
+## Project philosophy
 
-$link-color:            #268bd2;
+The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
-$headings-color:        #313131;    // h1,h2,h3,h4,h5,h6
+## Contributing
 
-$strong-color:          #303030;    // strong
+Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
-$pre-background-color:  #f9f9f9;    // pre
+### Previewing the theme locally
 
-$blockquote-color:        #7a7a7a;  // blockquote
-$blockquote-border-color: #e5e5e5;
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
 
-$table-border-color:         #e5e5e5;
-$table-odd-background-color: #f9f9f9;
-~~~
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
-A big thanks to the Poole theme; the `jekyll-minimal-theme` started out w/
-the typography and color settings from the Poole theme.
+### Running tests
 
-
-## Alternative (Minimal) Jekyll Themes
-
-- Poole Theme by Mark Otto - [(Source)](https://github.com/poole/poole)
-
-- Pixyll Theme by John Otander - [(Source)](https://github.com/johnotander/pixyll)
-
-~~~
-in _main.scss:
-  font-family:     "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
-  code-font-family: Menlo, Monaco, "Courier New", monospace;
-  h1-h6|button|form|pagination|footer -font-family:
-                   'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-
-in _basscss.scss:
-  font-family:       'Helvetica Neue', Helvetica, sans-serif;
-~~~
-
-- Hikari Theme by Mathieu Mayer-Mazzoli - [(Source)](https://github.com/m3xm/hikari-for-Jekyll)
-
-~~~
-in components/_syntax.scss:
-  code-font-family:    'Courier', monospace;
-in base/_variables.scss:
-  font-family:         'Open Sans', sans-serif;
-  variant-font-family: 'Lora', Georgia, serif;
-in base/_global.scss:
-  h1-h6-font-family:  'Open Sans', sans-serif;
-in base/_reset.scss:
-  font-family:         sans-serif;
-  code-font-family:    monospace, monospace;
-~~~
-
-
-### More Themes
-
-See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
-
-### More Quick Starter Wizard Scripts
-
-See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
-
-
-## License
-
-![](https://publicdomainworks.github.io/buttons/zero88x31.png)
-The theme and scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
-
-## Questions? Comments?
-
-Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
-Thanks!
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
