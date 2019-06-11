@@ -8,11 +8,9 @@ I'm a Sr. Platform Engineer and DevOps Advocate at InComm, located in Tampa, FL.
 
 ### What I Do
 
-As a DevOps advocate, I believe when the entire IT organization works together as one and remains focused on the same overall goal, we can provide the best product to our customers. I really enjoy cross functional collaboration and working in a team environment; sharing solutions, knowledge, or lending a hand to automate a task that eases someone else’s life. I have a true passion for continuous improvement and reducing toil by identifying efficiency bottlenecks and building solutions to remove them.
+As a DevOps advocate, I believe when the entire IT organization works together as one and remains focused on the same overall goal, we can provide the best product to our customers. As a result I enjoy promoting cross functional collaboration and working in a team environment; sharing solutions, knowledge, or lending a hand to automate a task that eases someone else’s life. I have a true passion for continuous improvement and reducing toil by identifying efficiency bottlenecks and building solutions to remove them.
 
-I started working with PowerShell right out of the gate in 2009, and is my go to language of choice. I've also developed tools with Python and I'm currently learning Go.
-
-I'm also a huge fan of containers and anything open source.
+I started working with PowerShell right out of the gate in 2009, and is my go to language of choice. I've also developed tools with Python and I'm currently learning Go. I'm also a huge fan of containers and anything open source.
 
 ### Quotes
 
