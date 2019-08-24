@@ -12,17 +12,6 @@ As a DevOps advocate, I believe when the entire IT organization works together a
 
 I started working with PowerShell right out of the gate in 2009, and is my language of choice. I've also developed tools and applications with Python and I'm beginning to work with Go. I'm also a huge fan of containers and anything open source.
 
-### Quotes
-
-> There are no secrets to success. It is the result of preparation, hard work, and learning from failure.
-> -- Colin Powell
-
-> Never look down on anybody unless you’re helping him up.
-> -- Jesse Jackson
-
-> Judge a man by his questions rather than his answers.
-> -- Voltaire
-
 ## Writings
 
 - [Finding Memory Leaks with PoolMon](https://medium.com/@clintcolding/finding-memory-leaks-with-poolmon-3da80e479040)
