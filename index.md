@@ -35,3 +35,5 @@ I started working with PowerShell right out of the gate in 2009, and is my langu
 [SmallStats](http://www.smallstats.net) - A web app displaying sortable statistics and rankings for the popular baseball simulation game, SmallBall!
 
 [UnisphereExporter](https://github.com/clintcolding/UnisphereExporter) - A Prometheus exporter for VMAX Unisphere metrics built with PowerShell!
+
+<figure><embed src="https://wakatime.com/share/@TheRealPalpatine/80d05ef0-3ee0-42bf-b41c-fe9dc5b5a5cf.svg"></embed></figure>
