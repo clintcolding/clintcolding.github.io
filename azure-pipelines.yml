@@ -14,7 +14,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: clintcolding/serverinfo
+    repository: clintcolding/clintcolding_web
 - task: Docker@2
   displayName: Logout of Docker Hub
   inputs:
