@@ -3,7 +3,7 @@ FROM jekyll/builder as builder
 LABEL maintainer="Clint Colding <clintcolding@gmail.com>"
 WORKDIR /app
 COPY . .
-# RUN chown -R jekyll /app
+RUN chown -R jekyll /app
 RUN bundle install
 RUN bundle exec jekyll build
 
