@@ -3,7 +3,7 @@ FROM ubuntu:latest as builder
 LABEL maintainer="Clint Colding <clintcolding@gmail.com>"
 WORKDIR /app
 COPY . .
-RUN apt-get install ruby-full build-essential zlib1g-dev
+RUN apt-get update && apt-get install ruby-full build-essential zlib1g-dev
 RUN gem install jekyll bundler
 RUN chown -R jekyll /app
 RUN bundle install
