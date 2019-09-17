@@ -5,7 +5,6 @@ WORKDIR /app
 COPY . .
 RUN apt-get update && apt-get -y install ruby-full build-essential zlib1g-dev
 RUN gem install jekyll bundler
-RUN chown -R jekyll /app
 RUN bundle install
 RUN bundle exec jekyll build
 
