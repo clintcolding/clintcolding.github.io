@@ -3,7 +3,6 @@ FROM alpine as builder
 LABEL maintainer="Clint Colding <clintcolding@gmail.com>"
 WORKDIR /app
 COPY . .
-RUN chown -R jekyll /app
 RUN apk add --update ruby \
     && apk add --virtual build-dependencies build-base ruby-dev libffi-dev \
     && gem install bundler --no-ri --no-rdoc \
