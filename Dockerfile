@@ -1,12 +1,13 @@
 # Build Jeykll site
-FROM alpine as builder
+FROM alpine:3.6 as builder
 LABEL maintainer="Clint Colding <clintcolding@gmail.com>"
 WORKDIR /app
 COPY . .
 RUN apk add --update ruby \
     && apk add --virtual build-dependencies build-base ruby-dev libffi-dev \
-    && gem install bundler --no-ri --no-rdoc \
-    && bundle install --without development test \
+    && gem install jekyll --without development test \
+    && gem install json --no-ri --no-rdoc \
+    && gem install jekyll --without development test \
     && gem cleanup \
     && apk del build-dependencies
 RUN bundle exec jekyll build
