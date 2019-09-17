@@ -5,9 +5,9 @@ WORKDIR /app
 COPY . .
 RUN apk add --update ruby \
     && apk add --virtual build-dependencies build-base ruby-dev libffi-dev \
-    && gem install bundler --no-ri --no-rdoc \
-    && gem install json --without development test \
-    && gem install jekyll --without development test \
+    && gem install bundler \
+    && gem install json \
+    && gem install jekyll \
     && gem cleanup \
     && apk del build-dependencies
 RUN bundle exec jekyll build
